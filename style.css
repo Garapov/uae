@@ -599,10 +599,25 @@ svg{
 }
 .sec4__topImgWrap svg{
     position: absolute;
-    pointer-events: none;
     right: 1.5em;
     bottom: 1.5em;
     width: 2.625em;
+}
+.videoBlock svg{
+	transition: all 0.2s ease 0s;
+	will-change: transform;
+}
+.videoBlock svg:hover{
+	transform: scale(1.05);
+	 cursor: pointer;
+}
+.sec4__topImgWrap.videoBlock video{
+	width: 35.8125em;
+	height: 30.563em;
+}
+.videoBlock video{
+	object-fit: cover;
+    object-position: center;
 }
 .sec4__topImg{
 	width: 35.8125em;
@@ -611,6 +626,7 @@ svg{
 .sec4__topContent{
 	padding-left: 3.75em;
     padding-top: 0.25em;
+	flex: 1 1 auto;
 }
 .sec4__title{
 	font-weight: 700;
