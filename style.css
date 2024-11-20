@@ -578,8 +578,8 @@ svg{
 	color: #4F4F4F;
 }
 .sec4{
-	color: #fff;
-	background: #000;
+	color: #000;
+	background: #F5F5F7;
 	padding-top: 6.25em;
 	padding-bottom: 6.25em;
 }
@@ -640,7 +640,7 @@ svg{
 	font-size: 1.0625em;
 	line-height: 1.35; 
 	letter-spacing: 0.03em;
-	color: #DCDCDC;
+	color: #4f4f4f;
 	max-width: 26.2em;
 }
 .sec4__mid{
@@ -674,7 +674,7 @@ svg{
 	font-size: 1.0625em;
 	line-height: 1.35; 
 	letter-spacing: 0.03em;
-	color: #DCDCDC;
+	color: #4f4f4f;
 	margin-bottom: 1.4em;
 }
 .sec4__midImgWrap{
@@ -4058,3 +4058,9 @@ svg{
 
 
 
+.dark_bg {
+	background: #000 !important;
+}
+.dark_bg * {
+	color: #fff !important;
+}
