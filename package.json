@@ -1,0 +1,11 @@
+{
+  "name": "indonesia",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
