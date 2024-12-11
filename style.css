@@ -578,8 +578,12 @@ video {
   top: 0px;
 }
 
-.col-span-12 {
-  grid-column: span 12 / span 12;
+.order-first {
+  order: -9999;
+}
+
+.order-last {
+  order: 9999;
 }
 
 .col-span-full {
@@ -604,10 +608,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-full {
@@ -5626,6 +5626,10 @@ svg{
 }
 
 @media (min-width: 768px) {
+  .md\:order-none {
+    order: 0;
+  }
+
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -5634,20 +5638,12 @@ svg{
     grid-column: span 6 / span 6;
   }
 
-  .md\:grid {
-    display: grid;
-  }
-
-  .md\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:text-3xl {
@@ -5663,10 +5659,6 @@ svg{
 
   .lg\:col-span-10 {
     grid-column: span 10 / span 10;
-  }
-
-  .lg\:col-span-12 {
-    grid-column: span 12 / span 12;
   }
 
   .lg\:col-span-2 {
@@ -5693,16 +5685,12 @@ svg{
     grid-column: 1 / -1;
   }
 
-  .lg\:block {
-    display: block;
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:px-20 {
